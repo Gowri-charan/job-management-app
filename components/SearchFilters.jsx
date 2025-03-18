@@ -1,5 +1,6 @@
 "use client";
 
+import { px } from "@mantine/core";
 import { useState } from "react";
 
 const SearchFilters = () => {
@@ -81,11 +82,11 @@ const styles = {
     flexWrap: "wrap",
     alignItems: "center",
     gap: "20px",
-    padding: "65px",
+    padding: "50px",
     background: "#fff",
     boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
     width: "100%",
-    // minHeight: "214px",
+    maxWidth: "100%",
     fontFamily: "'Inter', sans-serif",
     justifyContent: "space-between",
     overflowX: "hidden", // Prevent horizontal scrolling
@@ -94,8 +95,8 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "10px",
-    // border: "1px solid #ddd",
     padding: "10px",
+    paddingLeft: "80px",
     borderRadius: "8px",
     width: "300px",
   },
@@ -107,30 +108,35 @@ const styles = {
   },
   dropdownContainer: {
     position: "relative",
+    width: "120px",
   },
   filter: {
     display: "flex",
     alignItems: "center",
-    gap: "10px",
+    justifyContent: "space-between",
+    gap: "5px",
+    padding: "10px",
     cursor: "pointer",
     fontWeight: "500",
   },
   dropdownMenu: {
     position: "absolute",
-    top: "35px",
+    top: "40px",
     left: "0",
     background: "#fff",
     border: "1px solid #ddd",
     borderRadius: "8px",
     boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
     padding: "10px",
-    minWidth: "150px",
-    zIndex: 100,
+    minWidth: "100px",
+    zIndex: 1000
   },
   salary: {
     display: "flex",
     flexDirection: "column",
     fontWeight: "500",
+    paddingRight: "100px",
+    
   },
   slider: {
     display: "flex",
@@ -140,7 +146,7 @@ const styles = {
     color: "#000",
   },
   range: {
-    width: "150x",
+    width: "120x",
     accentColor: "black", // Making slider black like the reference
   },
   divider: {
