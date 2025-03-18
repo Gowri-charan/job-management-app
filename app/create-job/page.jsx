@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import InputDesign from "../components/InputDesign"; // Ensure this is the correct path
 import Navbar from "@/components/Navbar"; // Ensure correct path
 import SearchFilters from "@/components/SearchFilters";
